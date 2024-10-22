@@ -1,1 +1,35 @@
-<p>comments works!</p>
+<section class="comments-section">
+    <div class="comments">
+  
+      <div class="text-img">
+        <div class="comment-content">
+  
+          <div class="comment-text">
+            <p>{{ comments[currentCommentIndex].message }}</p>
+          </div>
+          <div class="comment-author">
+            <div class="comment-divider"></div>
+            <p>{{ comments[currentCommentIndex].name }}</p>
+          </div>
+  
+        </div>
+  
+        <div class="avatar-container">
+            <div class="avatar-initials">
+              {{ getInitials(comments[currentCommentIndex].name) }}
+            </div>
+            <div class="avatar-border"></div>
+          </div>
+      </div>
+  
+      <div class="comment-controls">
+        <div class="comment-navigation">
+          <img (click)="prevComment()" src="./assets/img/arrow_up.svg" alt="Previous">
+          <div [ngClass]="{'active': currentCommentIndex === 0}" class="dot"></div>
+          <div [ngClass]="{'active': currentCommentIndex === 1}" class="dot"></div>
+          <img (click)="nextComment()" src="./assets/img/arrow_up.svg" alt="Next">
+        </div>
+      </div>
+    </div>
+  </section>
+  
