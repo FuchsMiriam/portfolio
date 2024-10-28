@@ -28,6 +28,33 @@ a {
   color: white;
 }
 
+.language-switcher {
+  display: flex;
+  gap: 10px;
+
+  .lang-btn {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color:  #1E2A3A;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    transition: border 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      border-color: #70e61c;
+      background-color: #2A3B4C;
+    }
+    &.active {
+      border-color: #70e61c;
+      background-color: rgba(112, 230, 28, 0.2);
+    }
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;

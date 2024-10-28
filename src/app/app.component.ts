@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './mainsite/header/header.component';
 import { MainsiteComponent } from './mainsite/mainsite.component';
 import { FooterComponent } from './footer/footer.component';
+//import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,6 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  
 }

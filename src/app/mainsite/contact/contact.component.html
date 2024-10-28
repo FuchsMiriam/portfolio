@@ -1,1 +1,133 @@
-<p>contact works!</p>
+<section class="contact-section">
+  <div class="contact-wrapper">
+    <div class="contact-header">
+      <div class="contact-header-line"></div>
+      <h1>Contact</h1>
+    </div>
+    <div class="contact-info">
+      <div class="contact-details">
+        <div class="contact-details-header">
+          <h2>Got a frontend challenge?<br />Let's build a solution!</h2>
+        </div>
+        <div class="contact-details-text">
+          <p>
+            Contact me via this form! I’m eager to learn about your ideas and
+            contribute my skills to help bring your projects to life.
+            <br />
+            <br />
+            Need a frontend developer?
+            <b>Contact me.</b>
+          </p>
+        </div>
+      </div>
+
+      
+      <form
+        (ngSubmit)="onSubmit(contactForm)"
+        #contactForm="ngForm"
+        class="contact-form"
+      >
+        <label for="name"></label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          minlength="4"
+          required
+          [(ngModel)]="contactData.name"
+          #name="ngModel"
+          [ngClass]="{
+            'input-error-border': !name.valid && name.touched,
+            'input-success-border': name.valid && name.touched
+          }"
+          placeholder="Your name"
+          class="form-input"
+        />
+        <span *ngIf="!name.valid && name.touched" class="form-error-message">
+          Your name is required and must be at least 4 characters.
+        </span>
+
+        <label for="email"></label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          [(ngModel)]="contactData.email"
+          #email="ngModel"
+          [ngClass]="{
+            'input-error-border': !email.valid && email.touched,
+            'input-success-border': email.valid && email.touched
+          }"
+          placeholder="Your email"
+          class="form-input"
+        />
+        <span *ngIf="!email.valid && email.touched" class="form-error-message">
+          Please enter a valid email address.
+        </span>
+
+        <label for="message"></label>
+        <textarea
+          id="message"
+          name="message"
+          minlength="8"
+          required
+          [(ngModel)]="contactData.message"
+          #message="ngModel"
+          [ngClass]="{
+            'input-error-border': !message.valid && message.touched,
+            'input-success-border': message.valid && message.touched
+          }"
+          placeholder="Your message"
+          class="form-input form-textarea"
+          style="height: 200px"
+        ></textarea>
+        <span
+          *ngIf="!message.valid && message.touched && !message.disabled"
+          class="form-error-message"
+        >
+          Please enter a message. Message must be at least 8 characters.
+        </span>
+
+        <div class="privacy-policy-section">
+          <img
+            (click)="acceptPrivacyPolicy()"
+            [src]="checkboxImage"
+            alt="Checkbox Icon"
+          />
+          <span>
+            I agree to the <a href="privacyPolicy">Privacy Policy</a>
+          </span>
+        </div>
+
+        <button
+          type="submit"
+          class="submit-button"
+          [disabled]="!contactForm.valid"
+          [ngClass]="{
+            'submit-button': checkboxImage === './assets/img/check_button_checked.svg'
+          }"
+          [ngStyle]="{
+            'background-color': checkboxImage === './assets/img/check_button_checked.svg' ? '#70E61C' : '#B6B6B6'
+          }"
+        >
+          Submit message
+        </button>
+      </form>
+
+      <img
+        class="contact-shadow"
+        src="./assets/img/contact_shadow.svg"
+        alt=""
+      />
+    </div>
+    <div class="arrow-up">
+      <img
+        (click)="toTop()"
+        src="./assets/img/arrow_go_up.svg"
+        alt="Scroll to top"
+      />
+    </div>
+  </div>
+</section>
