@@ -11,7 +11,7 @@
         </div>
         <div class="contact-details-text">
           <p>
-            Contact me via this form! I’m eager to learn about your ideas<br />and
+            Contact me via this form! I am eager to learn about your ideas<br />and
             contribute my skills to help bring your projects to life.
             <br />
             <br />
@@ -97,14 +97,14 @@
             alt="Checkbox Icon"
           />
           <span>
-            I agree to the <a href="privacyPolicy">Privacy Policy</a>
+            I have read the <a href="privacyPolicy">Privacy Policy</a> and agree to it.
           </span>
         </div>
 
         <button
           type="submit"
           class="submit-button"
-          [disabled]="!contactForm.valid"
+          [disabled]="!contactForm.valid || !privacyPolicyAccepted"
           [ngClass]="{
             'submit-button': checkboxImage === './assets/img/check_button_checked.svg'
           }"

@@ -15,7 +15,7 @@
   .skills-icons-container {
     padding: 40px 80px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
   }
   
   .skills-icons-grid {
@@ -46,7 +46,7 @@
   }
   
   .skills-details {
-    z-index: 10;
+    z-index: 1;
     width: 562px;
   }
   
