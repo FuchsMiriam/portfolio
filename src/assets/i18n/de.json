@@ -1,0 +1,38 @@
+{
+  "NAV": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PORTFOLIO": "Portfolio"
+  },
+  "BUTTON": {
+    "LETS_TALK": "Reden wir",
+    "GET_IN_TOUCH": "Kontakt aufnehmen"
+  },
+  "SCROLL": {
+    "DOWN": "Nach unten scrollen"
+  },
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "DESCRIPTION": "Hallo, ich bin eine Frontend-Entwicklerin aus Taunusstein, Deutschland, mit einer Leidenschaft für die Erstellung intuitiver und responsiver Webanwendungen.",
+    "INFO": "Meine Reise in die Frontend-Entwicklung begann aus einer Faszination darüber, wie Websites hinter den Kulissen funktionieren. Ich habe mich schnell in die Kombination aus Kreativität und Logik verliebt, die beim Aufbau von Benutzeroberflächen eine Rolle spielt. Jedes Projekt ist eine Gelegenheit, meine Fähigkeiten weiterzuentwickeln und nahtlose, ansprechende Erlebnisse für Benutzer zu schaffen. Ich liebe es, am Puls der neuesten Frontend-Technologien zu bleiben, um frische Ideen in meine Arbeit einzubringen. Ich habe eine flexible Denkweise und freue mich immer darauf, neue Herausforderungen anzunehmen, die mir helfen, meine Fähigkeiten zu erweitern und mein Verständnis zu vertiefen.",
+    "SPECIALIZATION": "Ich bin auf verschiedene Frontend-Technologien spezialisiert und liebe es, Designs mit sauberem, effizientem Code zum Leben zu erwecken. Ich habe Spaß daran, komplexe Probleme zu lösen und ständig neue Technologien zu lernen, um das Benutzererlebnis zu verbessern.",
+    "SKILLS": "Ich habe wertvolle Erfahrungen im Aufbau von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt. Von der Gestaltung responsiver Benutzeroberflächen bis zur Leistungsoptimierung arbeite ich kontinuierlich an meinen Fähigkeiten, um an der Spitze der Branche zu bleiben. Meine Reise endet hier nicht — ich bin stets auf der Suche nach neuen Wegen, mein Wissen zu erweitern und neue Herausforderungen anzunehmen. Kürzlich habe ich begonnen, mich mit ethischem Hacken zu beschäftigen, um die Websicherheit besser zu verstehen und die Robustheit der von mir entwickelten Anwendungen zu erhöhen. Kontinuierliches Lernen ist der Schlüssel zu meiner Herangehensweise, und ich bin gespannt, wohin es mich als Nächstes führt.",
+    "CONTACT_MESSAGE": "Kontaktieren Sie mich gerne. Ich bin stets bestrebt, mein Wissen zu erweitern und freue mich darauf, neue Technologien und Konzepte zu lernen."
+  },
+  "comments": {
+    "miriam_ina_message": "Als ich mit Miriam als Webentwicklerin arbeitete, war ich von ihrer Entschlossenheit und Motivation beeindruckt. Durch ihre wertvollen Ideen und produktiven Diskussionen konnten wir gemeinsam den besten Weg finden, unsere Webanwendung umzusetzen. Dank ihres starken Willens und Durchhaltevermögens konnte sie jede Herausforderung erfolgreich meistern.",
+    "miriam_manuel_message": "Die Zusammenarbeit mit Miriam war von Anfang an sehr angenehm. Sie beeindruckt mit ihrem professionellen, lösungsorientierten Denken und zuverlässigen Arbeitsweise. Mit ihrer offenen und freundlichen Art trägt sie wesentlich zu einer positiven Teamdynamik bei."
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "HEADER": "Frontend-Herausforderung?<br/>Lassen Sie uns eine Lösung entwickeln!",
+    "DESCRIPTION": "Kontaktieren Sie mich über dieses Formular! Ich bin gespannt auf<br/>Ihre Ideen und bereit, meine Fähigkeiten einzubringen, um<br/>Ihre Projekte zum Leben zu erwecken.<br/><br/>",
+    "NEED_DEV": "Brauchen Sie eine Frontend-Entwicklerin?<br/>",
+    "CONTACT_ME": "<b>Kontaktiere mich.</b>",
+    "NAME_PLACEHOLDER": "Ihr Name",
+    "EMAIL_PLACEHOLDER": "Ihre E-Mail",
+    "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
+    "SUBMIT": "Nachricht absenden",
+   "PRIVACY_POLICY": "Ich habe die <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacyPolicy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Datenschutzerklärung</a> gelesen und stimme ihr zu."
+  }
+}

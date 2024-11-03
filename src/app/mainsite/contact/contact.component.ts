@@ -2,16 +2,20 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, HttpClientModule],
+  imports: [FormsModule, CommonModule, HttpClientModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
   http = inject(HttpClient);
+  sanitizer = inject(DomSanitizer);
+  translateService = inject(TranslateService);
 
   privacyPolicyAccepted: boolean = false;
   checkboxImage: string = './assets/img/check_button.svg';
@@ -67,5 +71,9 @@ export class ContactComponent {
       top: 0,
       behavior: 'smooth',
     });
+  }
+
+  getHtml(key: string): any {
+    return this.sanitizer.bypassSecurityTrustHtml(this.translateService.instant(key));
   }
 }

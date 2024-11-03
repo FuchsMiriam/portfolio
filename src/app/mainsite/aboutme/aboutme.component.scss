@@ -1,17 +1,25 @@
-section {
+.about-me-container {
   display: flex;
   justify-content: center;
   width: 100%;
   position: relative;
   overflow: hidden;
   flex-wrap: nowrap;
-  left: 100px;
+  box-sizing: border-box;
+}
+
+.about-me {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .about-me-content {
   margin-top: 50px;
   max-width: 471px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -52,7 +60,7 @@ section {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 88px;
   font-weight: 700;
   text-align: left;
   margin-bottom: 0;
@@ -66,12 +74,12 @@ p {
 }
 
 .image-section {
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-    margin-left: 50px;
-    flex-grow: 1;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin-left: 50px;
+  flex-grow: 1;
   img {
     width: 400px;
     height: 400px;
@@ -80,7 +88,7 @@ p {
   }
 }
 
-.photo-line{
+.photo-line {
   border-top: 2px solid #70e61c;
   z-index: 10;
   position: absolute;

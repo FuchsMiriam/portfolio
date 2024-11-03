@@ -1,4 +1,5 @@
 <section class="hero-section">
+  <div class="hero-content-wrapper">
   <img
   class="hero-bg"
   src="./assets/img/background_abovethefold.svg"
@@ -24,7 +25,7 @@
       </div>
   
       <div class="contact-button-container">
-        <button class="contact-button">Let’s talk</button>
+        <button class="contact-button">{{ "BUTTON.LETS_TALK" | translate }}</button>
       </div>
     </div>
   
@@ -43,7 +44,7 @@
       </div>
   
       <div class="scroll-indicator">
-        <p>Scroll down</p>
+        <p>{{ "SCROLL.DOWN" | translate }}</p>
         <img
           class="scroll-arrow"
           (mouseenter)="changeArrowImage(true)"
@@ -53,5 +54,6 @@
         />
       </div>
     </div>
+  </div>
   </section>
   
