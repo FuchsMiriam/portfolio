@@ -34,5 +34,8 @@
     "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
     "SUBMIT": "Nachricht absenden",
    "PRIVACY_POLICY": "Ich habe die <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacyPolicy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Datenschutzerklärung</a> gelesen und stimme ihr zu."
+  },
+  "PORTFOLIO":{
+    "HEADER": "Entdecken Sie hier eine Auswahl meiner Arbeit – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
   }
 }
