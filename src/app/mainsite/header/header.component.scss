@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   background: #141d2f;
-
   width: 100%;
   z-index: 10;
   position: fixed;
   top: 0;
+  padding: 37px 100px;
+  box-sizing: border-box;
 }
 
 header {
@@ -15,7 +16,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 37px 100px;
 }
 
 .menu {
@@ -36,22 +36,76 @@ a {
     padding: 10px 20px;
     border: 2px solid transparent;
     border-radius: 20px;
-    background-color:  #1E2A3A;
+    background-color: #1e2a3a;
     color: white;
     font-size: 16px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     cursor: pointer;
     transition: border 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
     &:hover {
       border-color: #70e61c;
-      background-color: #2A3B4C;
+      background-color: #2a3b4c;
     }
     &.active {
       border-color: #70e61c;
       background-color: rgba(112, 230, 28, 0.2);
     }
+  }
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.5s ease;
+}
+
+.overlay.active {
+  left: 0;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.overlay-content a {
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.overlay-content a:hover {
+  font-size: 40px;
+}
+
+.close-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -71,7 +125,7 @@ a {
   align-items: center;
   gap: 40px;
   flex-direction: row;
-  font-size: 400;
+  font-weight: 400;
   > a {
     display: flex;
     font-size: 24px;
@@ -93,4 +147,43 @@ a {
       color: rgb(151, 71, 255);
     }
   }
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    width: 24px;
+    height: auto;
+  }
+}
+
+@media (max-width: 840px) {
+  .header {
+    padding: 37px 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .name-header {
+    gap: 16px;
+    > a {
+      font-size: 16px;
+    }
+  }
+  .language-switcher {
+    .lang-btn {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 390px){
+.name-header{
+  flex-direction: column;
+}
 }

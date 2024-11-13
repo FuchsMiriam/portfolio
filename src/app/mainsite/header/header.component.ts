@@ -6,7 +6,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, AppComponent, TranslateModule],
+  imports: [NgClass, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -22,5 +22,16 @@ export class HeaderComponent {
     this.translate.use(language);
   }
 
+  burgermenuOpen = false;
+
+  toggleMenu() {
+    this.burgermenuOpen = !this.burgermenuOpen;
+
+    if (this.burgermenuOpen) {
+      document.documentElement.style.overflow = 'hidden';  
+    } else {
+      document.documentElement.style.overflow = 'auto';  
+    }
+  }
   
 }

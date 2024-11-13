@@ -19,7 +19,7 @@
   }
   
   .skills-icons-grid {
-    width: 532px;
+    width: 721px;
     display: flex;
     flex-direction: row;
     gap: 62px;
@@ -34,8 +34,9 @@
     align-items: center;
     gap: 10px;
     text-align: center;
-    height: 139px;
-    width: 91px;
+    height: 100px;
+    width: 88px;
+    flex: 1 1 15%;
   
     > img {
       &:hover {

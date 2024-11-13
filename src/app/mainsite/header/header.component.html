@@ -7,15 +7,27 @@
         <span class="name-space"></span>Fuch
         <p>s</p></a
       >
+      <div class="language-switcher">
+        <button class="lang-btn" [ngClass]="{ active: activeLang === 'en' }" (click)="switchLanguage('en')">English</button>
+        <button class="lang-btn" [ngClass]="{ active: activeLang === 'de' }" (click)="switchLanguage('de')">Deutsch</button>
+      </div>
     </div>
-    <div class="language-switcher">
-      <button class="lang-btn" [ngClass]="{ active: activeLang === 'en' }" (click)="switchLanguage('en')">English</button>
-      <button class="lang-btn" [ngClass]="{ active: activeLang === 'de' }" (click)="switchLanguage('de')">Deutsch</button>
-    </div>
+   
     <div class="navbar">
       <a href="#about">{{ "NAV.ABOUT" | translate }}</a>
       <a href="#skills">{{ "NAV.SKILLS" | translate }}</a>
       <a href="#portfolio">{{ "NAV.PORTFOLIO" | translate }}</a>
+    </div>
+
+    <img class="burger-menu" (click)="toggleMenu()" src="./assets/img/burger-menu.svg" alt="">
+    <div class="overlay" [ngClass]="{'active': burgermenuOpen}">
+
+      <img class="close-overlay" (click)="toggleMenu()" src="./assets/img/close.svg" alt="Close">
+        <div class="overlay-content">
+            <a href="#about" (click)="toggleMenu()">{{ 'About me' | translate }}</a>
+            <a href="#skills" (click)="toggleMenu()">{{ 'Skills' | translate }}</a>
+            <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+        </div>
     </div>
   </header>
 </section>

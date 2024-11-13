@@ -2,16 +2,19 @@
   background: #141d2f;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
   padding: 0 100px;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .footer-content {
   width: 100%;
   //max-width: 1440px;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .line {
@@ -102,5 +105,24 @@ footer {
       border-bottom: 2px solid #70e61c;
       cursor: pointer;
     }
+  }
+}
+
+@media (max-width: 1125px) {
+  .name-middle{
+      >p {
+          font-size: 18px;
+          flex-wrap: nowrap
+      }
+  }
+  .logo-right {
+      gap: 24px;
+  }
+}
+@media (max-width: 825px) {
+  .footer {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
   }
 }
