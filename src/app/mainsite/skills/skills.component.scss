@@ -135,6 +135,14 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .skills-header {
+    > h2 {
+      font-size: 70px;
+    }
+  }
+}
+
 @media (max-width: 765px) {
   .skills-header {
     height: 100px;

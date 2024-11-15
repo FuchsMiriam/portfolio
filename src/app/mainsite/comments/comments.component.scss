@@ -27,8 +27,8 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); // Erhöhter Schatten bei Hover
-    border-color: #70e61c; // Farbwechsel des Rahmens
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    border-color: #70e61c;
     background: linear-gradient(145deg, #2b2d3d, #2b2d3d);
   }
 }
@@ -67,7 +67,7 @@
   background: linear-gradient(90deg, #70e61c, #9747ff);
   width: 50px;
   margin: 10px 0;
-  border-radius: 10px; 
+  border-radius: 10px;
   height: 3px;
 }
 
@@ -119,7 +119,8 @@
   justify-content: space-around;
   gap: 16px;
   position: relative;
-  left: -100px;
+  margin-left: auto;
+  margin-right: auto;
 
   > img {
     cursor: pointer;
@@ -139,5 +140,42 @@
       background-color: #3fa02c3b;
       border-radius: 50%;
     }
+  }
+}
+
+@media (max-width: 1250px) {
+  .comments {
+    max-width: 80%;
+    margin-top: 50px;
+  }
+
+  .comment-content {
+    gap: 0;
+  }
+
+  .comment-text {
+    > p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+.comments-section{
+ max-width: 90%;
+}
+
+.comment-content{
+height: fit-content;
+}
+
+.avatar-container{
+  display: none;
+}
+}
+
+@media (max-width: 500px) {
+  .comment-content{
+    padding: 24px 40px;
   }
 }

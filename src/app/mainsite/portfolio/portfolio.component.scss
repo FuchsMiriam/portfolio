@@ -5,7 +5,8 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  background-image: url(/assets/img/shadow-portfolio.svg), url(/assets/img/green-shadow-portfolio.svg);
+  background-image: url(/assets/img/shadow-portfolio.svg),
+    url(/assets/img/green-shadow-portfolio.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, center right;
   background-size: auto;
@@ -14,6 +15,7 @@
 
 .portfolio-content {
   width: 1440px;
+  z-index: 1;
 }
 
 .portfolio-bar {
@@ -175,60 +177,94 @@
   background-color: #70e61c;
 }
 
-@media (max-width: 800px) {
-  .portfolio-content {
-    > p {
-      position: relative;
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      margin-left: 0;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+@media (max-width: 1250px) {
+  .portfolio {
+    background-position: bottom left, center left;
+    z-index: 0;
+    background-size: 800px;
   }
-  .buttons {
-    margin-top: 20px;
-    height: 80px;
-    gap: 40px;
-  }
-  .github-btn,
-  .live-btn {
-    font-size: 16px;
-    padding: 10px 15px;
-  }
-  .bg-text {
-    height: 70%;
-    margin-top: 0px;
-    gap: 16px;
-    > h2 {
-      font-size: 16px;
-    }
-    > p {
-      font-size: 13px;
+
+  .portfolio-header {
+    > h1 {
+      font-size: 70px;
     }
   }
 
-  .portfilio-left-bg {
-    bottom: -3850px;
+  .portfolio-bar.left {
+    width: 50px;
   }
-  .project-card {
-    width: 300px;
-    height: 300px;
-  }
-  .portfolio-header {
+
+  .portfolio-text {
+    margin-bottom: 100px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .project-card:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .project-card:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .project-img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .portfolio {
+    background-position: center left, bottom left;
+    background-size: 600px, 800px;
+  }
+
+  .portfolio-bar.right{
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 765px) {
+  .portfolio {
+    background-position: bottom left, center left;
+    z-index: 0;
+    background-size: 350px, 400px;
+  }
+
+  .portfolio-header {
     justify-content: center;
     > h1 {
-      font-size: 60px;
+      font-size: 40px;
     }
   }
-  .portfolio-bar {
-    width: 200px;
+
+  .portfolio-bar.right{
+    max-width: 50px;
   }
-  .portfolio {
-    position: static;
+
+  .portfolio-text {
+    margin-bottom: 50px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-img {
+    height: 280px;
+  }
+
+  .buttons {
+    gap: 40px;
   }
 }
 @media (max-width: 530px) {
@@ -239,5 +275,10 @@
   }
   .portfolio-bar {
     width: 80px;
+  }
+
+  .github-btn,
+  .live-btn {
+    font-size: 18px;
   }
 }

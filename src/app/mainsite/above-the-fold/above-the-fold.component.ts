@@ -16,4 +16,13 @@ export class AboveTheFoldComponent {
     }
   }
 
+  scrollToAboutMe(): void {
+    const aboutMeElement = document.querySelector('#aboutme');
+    if (aboutMeElement) {
+      aboutMeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
+  
+
 }
