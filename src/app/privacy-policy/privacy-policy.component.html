@@ -1,0 +1,143 @@
+<section class="privacy-policy-section">
+  <h1>{{ 'PRIVACY_POLICY.TITLE' | translate }}</h1>
+  <div class="textarea">
+    <p>{{ 'PRIVACY_POLICY.LAST_UPDATED' | translate }}</p>
+    <br />
+    <p>{{ 'PRIVACY_POLICY.DESCRIPTION_1' | translate }}</p>
+    <p>
+      {{ 'PRIVACY_POLICY.DESCRIPTION_2' | translate }}
+      <a
+        href="{{ 'PRIVACY_POLICY.GENERATOR_LINK_URL' | translate }}"
+        target="_blank"
+      >
+        {{ 'PRIVACY_POLICY.GENERATOR_LINK_TEXT' | translate }}
+      </a>
+    </p>
+
+    <h2>{{ 'INTERPRETATION_DEFINITIONS.TITLE' | translate }}</h2>
+<h3>{{ 'INTERPRETATION_DEFINITIONS.INTERPRETATION_TITLE' | translate }}</h3>
+<p>{{ 'INTERPRETATION_DEFINITIONS.INTERPRETATION_TEXT' | translate }}</p>
+<h3>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS_TITLE' | translate }}</h3>
+<p>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS_INTRO' | translate }}</p>
+<ul>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.ACCOUNT' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.AFFILIATE' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.COMPANY' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.COOKIES' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.COUNTRY' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.DEVICE' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.PERSONAL_DATA' | translate }}</strong></p>
+  </li>
+  <li>
+    <p><strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.SERVICE' | translate }}</strong></p>
+  </li>
+  <li>
+    <p>
+      <strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.SERVICE_PROVIDER' | translate }}</strong>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.USAGE_DATA' | translate }}</strong>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.WEBSITE' | translate }}</strong>
+      <a
+        href="{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.WEBSITE_LINK' | translate }}"
+        rel="external nofollow noopener"
+        target="_blank"
+      >
+        {{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.WEBSITE_LINK' | translate }}
+      </a>
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>{{ 'INTERPRETATION_DEFINITIONS.DEFINITIONS.YOU' | translate }}</strong>
+    </p>
+  </li>
+</ul>
+<h2>{{ 'COLLECTING_USING_DATA.TITLE' | translate }}</h2>
+
+<h3>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.TITLE' | translate }}</h3>
+
+<h4>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.PERSONAL_DATA.TITLE' | translate }}</h4>
+<p>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.PERSONAL_DATA.DESCRIPTION' | translate }}</p>
+<ul>
+  <li *ngFor="let item of ('COLLECTING_USING_DATA.TYPES_OF_DATA.PERSONAL_DATA.LIST' | translate)">
+    {{ item }}
+  </li>
+</ul>
+
+<h4>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.USAGE_DATA.TITLE' | translate }}</h4>
+<p>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.USAGE_DATA.DESCRIPTION_1' | translate }}</p>
+<p>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.USAGE_DATA.DESCRIPTION_2' | translate }}</p>
+<p>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.USAGE_DATA.DESCRIPTION_3' | translate }}</p>
+<p>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.USAGE_DATA.DESCRIPTION_4' | translate }}</p>
+
+<h4>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.TRACKING_COOKIES.TITLE' | translate }}</h4>
+<p>{{ 'COLLECTING_USING_DATA.TYPES_OF_DATA.TRACKING_COOKIES.DESCRIPTION' | translate }}</p>
+<ul>
+  <li *ngFor="let tech of ('COLLECTING_USING_DATA.TYPES_OF_DATA.TRACKING_COOKIES.LIST' | translate)">
+    <strong>{{ tech.TITLE }}</strong>
+    <p>{{ tech.DESCRIPTION }}</p>
+  </li>
+</ul>
+
+
+<h3>{{ 'PERSONAL_DATA_USAGE.USE.TITLE' | translate }}</h3>
+<p>{{ 'PERSONAL_DATA_USAGE.USE.INTRO' | translate }}</p>
+<ul>
+  <li *ngFor="let purpose of ('PERSONAL_DATA_USAGE.USE.PURPOSES' | translate)">
+    {{ purpose }}
+  </li>
+</ul>
+
+<h3>{{ 'PERSONAL_DATA_USAGE.RETENTION.TITLE' | translate }}</h3>
+<p>{{ 'PERSONAL_DATA_USAGE.RETENTION.DESCRIPTION' | translate }}</p>
+
+<h3>{{ 'PERSONAL_DATA_USAGE.TRANSFER.TITLE' | translate }}</h3>
+<p>{{ 'PERSONAL_DATA_USAGE.TRANSFER.DESCRIPTION' | translate }}</p>
+
+<h3>{{ 'PERSONAL_DATA_USAGE.DELETE.TITLE' | translate }}</h3>
+<p>{{ 'PERSONAL_DATA_USAGE.DELETE.DESCRIPTION' | translate }}</p>
+
+<h3>{{ 'PERSONAL_DATA_USAGE.DISCLOSURE.TITLE' | translate }}</h3>
+<h4>{{ 'PERSONAL_DATA_USAGE.DISCLOSURE.BUSINESS_TRANSACTIONS.TITLE' | translate }}</h4>
+<p>{{ 'PERSONAL_DATA_USAGE.DISCLOSURE.BUSINESS_TRANSACTIONS.DESCRIPTION' | translate }}</p>
+<h4>{{ 'PERSONAL_DATA_USAGE.DISCLOSURE.LAW_ENFORCEMENT.TITLE' | translate }}</h4>
+<p>{{ 'PERSONAL_DATA_USAGE.DISCLOSURE.LAW_ENFORCEMENT.DESCRIPTION' | translate }}</p>
+
+<h3>{{ 'PERSONAL_DATA_USAGE.SECURITY.TITLE' | translate }}</h3>
+<p>{{ 'PERSONAL_DATA_USAGE.SECURITY.DESCRIPTION' | translate }}</p>
+
+<h2>{{ 'DATA_PROTECTION_RIGHTS.TITLE' | translate }}</h2>
+<p>{{ 'DATA_PROTECTION_RIGHTS.INTRO' | translate }}</p>
+<ul>
+  <li *ngFor="let right of ('DATA_PROTECTION_RIGHTS.RIGHTS' | translate)">
+    {{ right }}
+  </li>
+</ul>
+
+<h2>{{ 'CHILDRENS_PRIVACY.TITLE' | translate }}</h2>
+<p>{{ 'CHILDRENS_PRIVACY.DESCRIPTION' | translate }}</p>
+
+<h2>{{ 'CHANGES_TO_POLICY.TITLE' | translate }}</h2>
+<p>{{ 'CHANGES_TO_POLICY.DESCRIPTION' | translate }}</p>
+  </div>
+</section>

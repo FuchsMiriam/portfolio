@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -76,4 +76,18 @@ export class ContactComponent {
   getHtml(key: string): any {
     return this.sanitizer.bypassSecurityTrustHtml(this.translateService.instant(key));
   }
+
+  /*safePrivacyPolicyHtml!: SafeHtml;
+  ngOnInit(): void {
+    this.translateService.get('CONTACT.PRIVACY_POLICY').subscribe({
+      next: (translation) => {
+        const rawHtml = translation;
+        this.safePrivacyPolicyHtml = this.sanitizer.bypassSecurityTrustHtml(rawHtml);
+      },
+      error: (err) => {
+        console.error('Fehler beim Laden der Übersetzung:', err);
+      },
+    });
+  }*/
+  
 }

@@ -90,15 +90,17 @@
   font-weight: 400;
   padding: 15px 30px;
   border: none;
-  width: 210px;
+  width: 165px;
   border-radius: 10px;
   position: relative;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 20px;
+  text-decoration: none;
 
   &:hover {
     background-color: #9747ff;
-    width: 220px;
-    height: 70px;
+    transform: scale(1.1);
   }
 }
 
@@ -108,6 +110,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 110px;
+  text-align: center;
 }
 
 .hero-content {
@@ -223,6 +226,10 @@
 }
 
 @media (max-width: 980px) {
+  .hero-section {
+    height: 100vh;
+  }
+
   .name-title {
     > h1 {
       font-size: 45px;
@@ -249,6 +256,10 @@
 }
 
 @media (max-width: 625px) {
+  .contact-button-container{
+    height: auto;
+  }
+  
   .scroll-indicator {
     display: none;
   }

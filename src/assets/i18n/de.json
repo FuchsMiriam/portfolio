@@ -33,9 +33,140 @@
     "EMAIL_PLACEHOLDER": "Ihre E-Mail",
     "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
     "SUBMIT": "Nachricht absenden",
-   "PRIVACY_POLICY": "Ich habe die <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacyPolicy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Datenschutzerklärung</a> gelesen und stimme ihr zu."
+    "PRIVACY_POLICY": "Ich habe die <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacy-policy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Datenschutzerklärung</a> gelesen und stimme ihr zu."
   },
-  "PORTFOLIO":{
+  "PORTFOLIO": {
     "HEADER": "Entdecken Sie hier eine Auswahl meiner Arbeit – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+  "PRIVACY_POLICY": {
+    "TITLE": "Datenschutzerklärung",
+    "LAST_UPDATED": "Zuletzt aktualisiert: 17. November 2024",
+    "DESCRIPTION_1": "Diese Datenschutzerklärung beschreibt unsere Richtlinien und Verfahren zur Erhebung, Nutzung und Offenlegung Ihrer Informationen, wenn Sie den Dienst nutzen, und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt.",
+    "DESCRIPTION_2": "Wir verwenden Ihre persönlichen Daten, um den Dienst bereitzustellen und zu verbessern. Durch die Nutzung des Dienstes stimmen Sie der Erhebung und Nutzung von Informationen gemäß dieser Datenschutzerklärung zu. Diese Datenschutzerklärung wurde mit Hilfe des ",
+    "GENERATOR_LINK_TEXT": "Datenschutzerklärungsgenerators",
+    "GENERATOR_LINK_URL": "https://www.termsfeed.com/privacy-policy-generator/"
+  },
+  "INTERPRETATION_DEFINITIONS": {
+    "TITLE": "Auslegung und Definitionen",
+    "INTERPRETATION_TITLE": "Auslegung",
+    "INTERPRETATION_TEXT": "Die Wörter, deren Anfangsbuchstaben großgeschrieben sind, haben die nachstehend definierten Bedeutungen. Die folgenden Definitionen gelten unabhängig davon, ob sie im Singular oder im Plural erscheinen.",
+    "DEFINITIONS_TITLE": "Definitionen",
+    "DEFINITIONS_INTRO": "Für die Zwecke dieser Datenschutzerklärung:",
+    "DEFINITIONS": {
+      "ACCOUNT": "Konto bedeutet ein eindeutiges Konto, das für Sie erstellt wurde, um auf unseren Dienst oder Teile unseres Dienstes zuzugreifen.",
+      "AFFILIATE": "Affiliate bezeichnet eine Einheit, die eine Partei kontrolliert, von ihr kontrolliert wird oder unter gemeinsamer Kontrolle mit einer Partei steht, wobei \"Kontrolle\" den Besitz von 50 % oder mehr der Aktien, Beteiligungen oder anderen Wertpapiere bedeutet, die zur Wahl von Direktoren oder einer anderen leitenden Behörde berechtigen.",
+      "COMPANY": "Unternehmen (im Rahmen dieses Vertrags als \"das Unternehmen\", \"Wir\", \"Uns\" oder \"Unser\" bezeichnet) bezieht sich auf Pollo loco.",
+      "COOKIES": "Cookies sind kleine Dateien, die auf Ihrem Computer, Mobilgerät oder einem anderen Gerät von einer Website platziert werden und die Details Ihres Browserverlaufs auf dieser Website sowie viele andere Verwendungszwecke enthalten.",
+      "COUNTRY": "Land bezieht sich auf: Hessen, Deutschland.",
+      "DEVICE": "Gerät bezeichnet jedes Gerät, das auf den Dienst zugreifen kann, wie z. B. einen Computer, ein Mobiltelefon oder ein Tablet.",
+      "PERSONAL_DATA": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen.",
+      "SERVICE": "Dienst bezieht sich auf die Website.",
+      "SERVICE_PROVIDER": "Dienstleister bezeichnet jede natürliche oder juristische Person, die die Daten im Auftrag des Unternehmens verarbeitet. Es bezieht sich auf Drittunternehmen oder Einzelpersonen, die vom Unternehmen beauftragt werden, den Dienst zu erleichtern, den Dienst im Auftrag des Unternehmens bereitzustellen, dienstbezogene Leistungen zu erbringen oder dem Unternehmen zu helfen, wie der Dienst genutzt wird.",
+      "USAGE_DATA": "Nutzungsdaten beziehen sich auf Daten, die automatisch gesammelt werden, entweder durch die Nutzung des Dienstes oder aus der Infrastruktur des Dienstes selbst (z. B. die Dauer eines Seitenbesuchs).",
+      "WEBSITE": "Website bezieht sich auf Pollo loco, erreichbar unter",
+      "WEBSITE_LINK": "https://miriam-fuchs.developerakademie.net/modul-12/index.html",
+      "YOU": "Sie bezeichnet die Person, die den Dienst nutzt oder darauf zugreift, oder das Unternehmen oder eine andere juristische Person, in deren Auftrag diese Person den Dienst nutzt oder darauf zugreift, sofern zutreffend."
+    }
+  },
+  "COLLECTING_USING_DATA": {
+    "TITLE": "Erhebung und Nutzung Ihrer personenbezogenen Daten",
+    "TYPES_OF_DATA": {
+      "TITLE": "Erhobene Datenarten",
+      "PERSONAL_DATA": {
+        "TITLE": "Personenbezogene Daten",
+        "DESCRIPTION": "Während der Nutzung unseres Dienstes bitten wir Sie möglicherweise, uns bestimmte persönlich identifizierbare Informationen bereitzustellen, die verwendet werden können, um Sie zu kontaktieren oder zu identifizieren. Persönlich identifizierbare Informationen können unter anderem Folgendes umfassen:",
+        "LIST": [
+          "E-Mail-Adresse",
+          "Vorname und Nachname",
+          "Telefonnummer",
+          "Adresse, Bundesland, Provinz, Postleitzahl, Stadt",
+          "Nutzungsdaten"
+        ]
+      },
+      "USAGE_DATA": {
+        "TITLE": "Nutzungsdaten",
+        "DESCRIPTION_1": "Nutzungsdaten werden automatisch bei der Nutzung des Dienstes erhoben.",
+        "DESCRIPTION_2": "Nutzungsdaten können Informationen wie die Internetprotokolladresse (z. B. IP-Adresse) Ihres Geräts, den Browsertyp, die Browserversion, die Seiten unseres Dienstes, die Sie besuchen, Datum und Uhrzeit Ihres Besuchs, die auf diesen Seiten verbrachte Zeit, eindeutige Gerätekennungen und andere Diagnosedaten umfassen.",
+        "DESCRIPTION_3": "Wenn Sie auf den Dienst über ein mobiles Gerät zugreifen, können wir automatisch bestimmte Informationen erfassen, einschließlich, aber nicht beschränkt auf den Gerätetyp, den Sie verwenden, die eindeutige ID Ihres Geräts, die IP-Adresse Ihres mobilen Geräts, Ihr mobiles Betriebssystem, den Typ des mobilen Internetbrowsers, den Sie verwenden, eindeutige Gerätekennungen und andere Diagnosedaten.",
+        "DESCRIPTION_4": "Wir können auch Informationen erfassen, die Ihr Browser sendet, wann immer Sie unseren Dienst besuchen oder auf den Dienst über ein mobiles Gerät zugreifen."
+      },
+      "TRACKING_COOKIES": {
+        "TITLE": "Tracking-Technologien und Cookies",
+        "DESCRIPTION": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um die Aktivität auf unserem Dienst zu verfolgen und bestimmte Informationen zu speichern. Zu den verwendeten Tracking-Technologien gehören Beacons, Tags und Skripte, um Informationen zu sammeln, zu verfolgen und unseren Dienst zu verbessern und zu analysieren. Zu den von uns verwendeten Technologien können gehören:",
+        "LIST": [
+          {
+            "TITLE": "Cookies oder Browser-Cookies",
+            "DESCRIPTION": "Ein Cookie ist eine kleine Datei, die auf Ihrem Gerät abgelegt wird. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird. Wenn Sie Cookies jedoch nicht akzeptieren, können Sie möglicherweise einige Teile unseres Dienstes nicht nutzen. Sofern Sie Ihre Browsereinstellungen nicht so angepasst haben, dass sie Cookies ablehnen, kann unser Dienst Cookies verwenden."
+          },
+          {
+            "TITLE": "Web-Beacons",
+            "DESCRIPTION": "Bestimmte Abschnitte unseres Dienstes und unsere E-Mails können kleine elektronische Dateien enthalten, die als Web-Beacons bezeichnet werden (auch bekannt als Clear Gifs, Pixel-Tags und Single-Pixel-Gifs), die es dem Unternehmen ermöglichen, Benutzer zu zählen, die diese Seiten besucht oder eine E-Mail geöffnet haben, sowie für andere verwandte Website-Statistiken."
+          }
+        ]
+      }
+    }
+  },
+  "PERSONAL_DATA_USAGE": {
+    "USE": {
+      "TITLE": "Verwendung Ihrer personenbezogenen Daten",
+      "INTRO": "Das Unternehmen kann personenbezogene Daten für die folgenden Zwecke verwenden:",
+      "PURPOSES": [
+        "Um unseren Dienst bereitzustellen und zu warten",
+        "Um Ihr Konto zu verwalten",
+        "Für die Erfüllung eines Vertrags",
+        "Um Sie zu kontaktieren",
+        "Um Ihnen Nachrichten, Sonderangebote und allgemeine Informationen bereitzustellen",
+        "Um Ihre Anfragen zu verwalten",
+        "Für geschäftliche Übertragungen",
+        "Für andere Zwecke"
+      ]
+    },
+    "RETENTION": {
+      "TITLE": "Aufbewahrung Ihrer personenbezogenen Daten",
+      "DESCRIPTION": "Das Unternehmen wird Ihre personenbezogenen Daten nur so lange aufbewahren, wie es für die in dieser Datenschutzrichtlinie genannten Zwecke erforderlich ist."
+    },
+    "TRANSFER": {
+      "TITLE": "Übertragung Ihrer personenbezogenen Daten",
+      "DESCRIPTION": "Ihre Informationen, einschließlich personenbezogener Daten, werden in den Betriebsbüros des Unternehmens verarbeitet und können auf Servern außerhalb Ihrer Gerichtsbarkeit übertragen und gespeichert werden."
+    },
+    "DELETE": {
+      "TITLE": "Löschen Ihrer personenbezogenen Daten",
+      "DESCRIPTION": "Sie haben das Recht, die Löschung oder Unterstützung bei der Löschung der von uns erhobenen personenbezogenen Daten zu verlangen."
+    },
+    "DISCLOSURE": {
+      "TITLE": "Offenlegung Ihrer personenbezogenen Daten",
+      "BUSINESS_TRANSACTIONS": {
+        "TITLE": "Geschäftstransaktionen",
+        "DESCRIPTION": "Wir können Ihre personenbezogenen Daten im Falle einer geschäftlichen Transaktion wie einer Fusion, einer Übernahme oder eines Verkaufs von Vermögenswerten offenlegen."
+      },
+      "LAW_ENFORCEMENT": {
+        "TITLE": "Strafverfolgung",
+        "DESCRIPTION": "Unter bestimmten Umständen kann das Unternehmen verpflichtet sein, Ihre personenbezogenen Daten offenzulegen, wenn dies gesetzlich vorgeschrieben ist oder als Reaktion auf gültige Anfragen von Behörden."
+      }
+    },
+    "SECURITY": {
+      "TITLE": "Sicherheit Ihrer personenbezogenen Daten",
+      "DESCRIPTION": "Die Sicherheit Ihrer personenbezogenen Daten ist uns wichtig. Denken Sie jedoch daran, dass keine Methode der Übertragung über das Internet oder der elektronischen Speicherung 100 % sicher ist."
+    }
+  },
+  "DATA_PROTECTION_RIGHTS": {
+    "TITLE": "Ihre Datenschutzrechte",
+    "INTRO": "Je nach Ihrem Standort haben Sie möglicherweise folgende Rechte in Bezug auf Ihre personenbezogenen Daten:",
+    "RIGHTS": [
+      "Das Recht auf Zugang",
+      "Das Recht auf Berichtigung",
+      "Das Recht auf Löschung",
+      "Das Recht auf Einschränkung der Verarbeitung",
+      "Das Recht auf Datenübertragbarkeit",
+      "Das Recht, der Verarbeitung zu widersprechen"
+    ]
+  },
+  "CHILDRENS_PRIVACY": {
+    "TITLE": "Datenschutz von Kindern",
+    "DESCRIPTION": "Unser Service ist nicht für die Nutzung durch Kinder unter 13 Jahren bestimmt. Wir sammeln wissentlich keine persönlichen Informationen von Kindern unter 13 Jahren."
+  },
+  "CHANGES_TO_POLICY": {
+    "TITLE": "Änderungen dieser Datenschutzrichtlinie",
+    "DESCRIPTION": "Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzrichtlinie auf dieser Seite veröffentlichen."
   }
 }
