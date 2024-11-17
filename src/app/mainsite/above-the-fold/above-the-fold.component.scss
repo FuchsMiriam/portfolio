@@ -9,7 +9,7 @@
   background-color: #141d2f;
 }
 
-.hero-content-wrapper {
+/*.hero-content-wrapper {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -35,6 +35,40 @@
   align-items: center;
   margin: 0;
   max-width: 500px;
+}*/
+
+.hero-content-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Die beiden Bereiche links und rechts nebeneinander */
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 500px;
+}
+
+.background-image-photo {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.center-image {
+  width: 100%;
+  max-width: 500px;
+  z-index: 0;
 }
 
 .introduction-container {
@@ -193,8 +227,10 @@
 
 @media (max-width: 1400px) {
   .background-image-photo {
-    top: 40%;
-    left: 0;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    z-index: 0;
   }
 
   .hero-bg {
@@ -202,7 +238,12 @@
   }
 
   .hero-section {
-    height: calc(100vh + 200px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
   }
 
   .hero-content-wrapper {
@@ -211,23 +252,8 @@
 }
 
 @media (max-width: 980px) {
-  .name-title {
-    > h1 {
-      font-size: 80px;
-    }
-    > h2 {
-      font-size: 40px;
-    }
-  }
-
-  .introduction-text {
-    font-size: 54px;
-  }
-}
-
-@media (max-width: 980px) {
   .hero-section {
-    height: 100vh;
+    padding-top: 0;
   }
 
   .name-title {
@@ -256,10 +282,10 @@
 }
 
 @media (max-width: 625px) {
-  .contact-button-container{
+  .contact-button-container {
     height: auto;
   }
-  
+
   .scroll-indicator {
     display: none;
   }
@@ -278,10 +304,17 @@
   }
 }
 
+@media (max-width: 470px) {
+  .background-image-photo {
+    width: 400px;
+  }
+}
+
 @media (max-width: 415px) {
   .introduction-container {
     flex-direction: column;
   }
+
   .introduction-text {
     transform: none;
     height: 60px;

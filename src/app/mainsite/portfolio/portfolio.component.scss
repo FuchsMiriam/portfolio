@@ -16,6 +16,7 @@
 .portfolio-content {
   width: 1440px;
   z-index: 1;
+  margin-top: 100px;
 }
 
 .portfolio-bar {
@@ -39,7 +40,6 @@
   align-items: center;
   flex-direction: row;
   gap: 10px;
-  margin-top: 40px;
   flex-wrap: wrap;
   position: relative;
 
