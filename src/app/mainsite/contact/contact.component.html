@@ -22,6 +22,7 @@
 
       
       <form
+      *ngIf="!formSent"
         (ngSubmit)="onSubmit(contactForm)"
         #contactForm="ngForm"
         class="contact-form"
@@ -112,6 +113,10 @@
         {{ 'CONTACT.SUBMIT' | translate }}
         </button>
       </form>
+
+      <div id="confirmation-message" *ngIf="emailSent">
+        <p>Your email has been sent successfully!</p>
+      </div>
 
       <img
         class="contact-shadow"

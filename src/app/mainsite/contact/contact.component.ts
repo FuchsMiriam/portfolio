@@ -13,9 +13,14 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  http = inject(HttpClient);
+  /*http = inject(HttpClient);
   sanitizer = inject(DomSanitizer);
-  translateService = inject(TranslateService);
+  translateService = inject(TranslateService);*/
+  constructor(
+    private http: HttpClient,
+    private sanitizer: DomSanitizer,
+    private translateService: TranslateService
+  ) {}
 
   privacyPolicyAccepted: boolean = false;
   checkboxImage: string = './assets/img/check_button.svg';
@@ -27,6 +32,8 @@ export class ContactComponent {
   };
 
   mailTest = true;
+  emailSent = false;
+  formSent = false;
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -45,8 +52,9 @@ export class ContactComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            ngForm.resetForm();
-            this.privacyPolicyAccepted = false;
+            /*ngForm.resetForm();
+            this.privacyPolicyAccepted = false;*/
+            this.showConfirmation(ngForm);
           },
           error: (error) => {
             console.error(error);
@@ -54,9 +62,22 @@ export class ContactComponent {
           complete: () => console.info('send post completed'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
-      this.privacyPolicyAccepted = false;
+      /*ngForm.resetForm();
+      this.privacyPolicyAccepted = false;*/
+      this.showConfirmation(ngForm);
     }
+  }
+
+  private showConfirmation(ngForm?: NgForm) {
+    if (ngForm) ngForm.resetForm();
+    this.privacyPolicyAccepted = false;
+    this.emailSent = true;
+    this.formSent = true;
+
+    setTimeout(() => {
+      this.emailSent = false;
+      this.formSent = false;
+    }, 5000);
   }
 
   acceptPrivacyPolicy() {
@@ -77,17 +98,6 @@ export class ContactComponent {
     return this.sanitizer.bypassSecurityTrustHtml(this.translateService.instant(key));
   }
 
-  /*safePrivacyPolicyHtml!: SafeHtml;
-  ngOnInit(): void {
-    this.translateService.get('CONTACT.PRIVACY_POLICY').subscribe({
-      next: (translation) => {
-        const rawHtml = translation;
-        this.safePrivacyPolicyHtml = this.sanitizer.bypassSecurityTrustHtml(rawHtml);
-      },
-      error: (err) => {
-        console.error('Fehler beim Laden der Übersetzung:', err);
-      },
-    });
-  }*/
+ 
   
 }

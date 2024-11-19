@@ -180,6 +180,17 @@
   text-decoration: underline !important;
 }
 
+#confirmation-message {
+  font-size: 16px;
+  color: #70e61c;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .arrow-up {
   background: #141d2f;
   display: flex;
