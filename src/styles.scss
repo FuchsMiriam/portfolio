@@ -9,6 +9,22 @@ body{
     color: white;
 }
 
+/*Scroll bar*/
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #141D2F;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #9747ff, #6a00ff);
+  border-radius: 20px;
+}
+
 /* poppins-100 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

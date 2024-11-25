@@ -36,7 +36,7 @@ export class ContactComponent {
   formSent = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://www.miriam-fuchs.net/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -47,7 +47,12 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && this.privacyPolicyAccepted && !this.mailTest) {
+    if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      this.privacyPolicyAccepted &&
+      !this.mailTest
+    ) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -57,9 +62,9 @@ export class ContactComponent {
             this.showConfirmation(ngForm);
           },
           error: (error) => {
-            console.error(error);
+            console.error('Error occurred while sending email:', error);
           },
-          complete: () => console.info('send post completed'),
+          complete: () => console.info('Send post completed'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       /*ngForm.resetForm();
@@ -95,9 +100,8 @@ export class ContactComponent {
   }
 
   getHtml(key: string): any {
-    return this.sanitizer.bypassSecurityTrustHtml(this.translateService.instant(key));
+    return this.sanitizer.bypassSecurityTrustHtml(
+      this.translateService.instant(key)
+    );
   }
-
- 
-  
 }
