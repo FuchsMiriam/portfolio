@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -13,9 +13,6 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  /*http = inject(HttpClient);
-  sanitizer = inject(DomSanitizer);
-  translateService = inject(TranslateService);*/
   constructor(
     private http: HttpClient,
     private sanitizer: DomSanitizer,
@@ -57,8 +54,6 @@ export class ContactComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            /*ngForm.resetForm();
-            this.privacyPolicyAccepted = false;*/
             this.showConfirmation(ngForm);
           },
           error: (error) => {
@@ -67,8 +62,6 @@ export class ContactComponent {
           complete: () => console.info('Send post completed'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      /*ngForm.resetForm();
-      this.privacyPolicyAccepted = false;*/
       this.showConfirmation(ngForm);
     }
   }

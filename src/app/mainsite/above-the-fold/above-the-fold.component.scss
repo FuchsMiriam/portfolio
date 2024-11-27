@@ -9,41 +9,13 @@
   background-color: #141d2f;
 }
 
-/*.hero-content-wrapper {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-bottom: 100px;
-}
-
-.background-image-photo {
-  position: absolute;
-  left: -10%;
-  top: 50%;
-  transform: translateY(-40%);
-  z-index: 0;
-}
-
-.center-image {
-  position: relative;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  max-width: 500px;
-}*/
-
 .hero-content-wrapper {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Die beiden Bereiche links und rechts nebeneinander */
+  justify-content: space-between;
   position: relative;
   padding-bottom: 100px;
 }
@@ -73,9 +45,6 @@
 
 .introduction-container {
   display: flex;
-  /*justify-content: center;
-  align-items: center;
-  text-align: center;*/
 }
 
 .introduction-text {

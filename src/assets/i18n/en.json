@@ -26,7 +26,7 @@
   "CONTACT": {
     "TITLE": "Contact",
     "HEADER": "Got a frontend challenge?<br/>Let's build a solution!",
-    "DESCRIPTION": "Contact me via this form! I am eager to learn about your ideas<br/>and contribute my skills to help bring your projects to life.<br/><br/>",
+    "DESCRIPTION": "Contact me via this form! I am eager to learn about your ideas and contribute my skills to help bring your projects to life.<br/>",
     "NEED_DEV": "Need a frontend developer?<br/>",
     "CONTACT_ME": "<b>Contact me.</b>",
     "NAME_PLACEHOLDER": "Your name",
@@ -36,7 +36,11 @@
     "PRIVACY_POLICY": "I have read the <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacy-policy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Privacy Policy</a> and agree to it."
   },
   "PORTFOLIO": {
-    "HEADER": "Explore a selection of my work here – interact with projects to see my skills in action."
+    "HEADER": "Explore a selection of my work here – interact with projects to see my skills in action.",
+    "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "POLLO": "A Jump ’n’ Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chickens.",
+     "CRM": "A very simple Customer Relationship Management system working with CRUD functionality.",
+    "POKEMON": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
   },
   "PRIVACY_POLICY": {
     "TITLE": "Privacy Policy",

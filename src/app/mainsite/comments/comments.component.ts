@@ -10,17 +10,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './comments.component.scss'
 })
 export class CommentsComponent {
- /* comments = [
-    { 
-      message: 'When I worked with Miriam as a web developer, I was impressed by her determination and motivation. Through her valuable ideas and productive discussions, we were able to find the best way to implement our web application together. Thanks to her strong will and persistence, she was able to successfully overcome any challenge.',
-      name: 'Ina Penner'
-    },
-    { 
-      message: 'Working with Miriam was very pleasant from the start. She impresses with her professionalism, solution-oriented thinking and reliable way of working. With her open and friendly nature, she contributes significantly to positive team dynamics.',
-      name: 'Manuel Mannhold'
-    }
-  ];*/
-
   comments = [
     { 
       message: 'comments.miriam_ina_message',

@@ -26,9 +26,9 @@
   "CONTACT": {
     "TITLE": "Kontakt",
     "HEADER": "Frontend-Herausforderung?<br/>Lassen Sie uns eine Lösung entwickeln!",
-    "DESCRIPTION": "Kontaktieren Sie mich über dieses Formular! Ich bin gespannt auf<br/>Ihre Ideen und bereit, meine Fähigkeiten einzubringen, um<br/>Ihre Projekte zum Leben zu erwecken.<br/><br/>",
+    "DESCRIPTION": "Kontaktieren Sie mich über dieses Formular! Ich bin gespannt auf Ihre Ideen und bereit, meine Fähigkeiten einzubringen, um Ihre Projekte zum Leben zu erwecken.<br/>",
     "NEED_DEV": "Brauchen Sie eine Frontend-Entwicklerin?<br/>",
-    "CONTACT_ME": "<b>Kontaktiere mich.</b>",
+    "CONTACT_ME": "<b>Kontaktieren Sie mich.</b>",
     "NAME_PLACEHOLDER": "Ihr Name",
     "EMAIL_PLACEHOLDER": "Ihre E-Mail",
     "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
@@ -36,7 +36,11 @@
     "PRIVACY_POLICY": "Ich habe die <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacy-policy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Datenschutzerklärung</a> gelesen und stimme ihr zu."
   },
   "PORTFOLIO": {
-    "HEADER": "Entdecken Sie hier eine Auswahl meiner Arbeit – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    "HEADER": "Entdecken Sie hier eine Auswahl meiner Arbeit – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "JOIN": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "POLLO": "Ein Jump ’n’ Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die Hühner zu kämpfen.",
+    "CRM": "Ein sehr simples Customer-Relationship-Management-System mit CRUD-Funktionalität.",
+    "POKEMON": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und auflistet."
   },
   "PRIVACY_POLICY": {
     "TITLE": "Datenschutzerklärung",

@@ -68,7 +68,7 @@
   margin-top: 24px;
   font-size: 16px;
   font-weight: 400;
-  width: 90%;
+  width: 80%;
 }
 
 .contact-form {
@@ -227,7 +227,7 @@
   .contact-details {
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%;
+    max-width: 60%;
   }
 
   .contact-form {
@@ -297,6 +297,12 @@
   }
 }
 
+@media (max-width: 570px) {
+  .contact-form {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 450px) {
   .contact-header-line {
     width: 50px;
@@ -304,6 +310,10 @@
 
   .contact-details {
     align-items: center;
+  }
+
+  .contact-details-text {
+    width: 100%;
   }
 
   .contact-form {
