@@ -1,3 +1,4 @@
+/* Portfolio section */
 .portfolio {
   background: #141d2f;
   width: 100%;
@@ -19,6 +20,7 @@
   margin-top: 100px;
 }
 
+/* Header and bar */
 .portfolio-bar {
   width: 100%;
   border: 2px solid #9747ff;
@@ -49,6 +51,7 @@
   }
 }
 
+/* Projects and cards */
 .projects {
   display: flex;
   gap: 35px;
@@ -112,6 +115,7 @@
   text-align: right;
 }
 
+/* Project text */
 .project-title {
   font-weight: 700;
   font-size: 32px;
@@ -132,6 +136,7 @@
   margin: 0;
 }
 
+/* Buttons */
 .buttons {
   > a {
     gap: 40px;

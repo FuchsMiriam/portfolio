@@ -1,3 +1,4 @@
+/* Skills section */
 .skills {
   background: #141d2f;
   width: 100%;
@@ -12,6 +13,7 @@
   justify-content: space-between;
 }
 
+/* Icons */
 .skills-icons-container {
   padding: 40px 80px;
   position: relative;
@@ -46,6 +48,7 @@
   }
 }
 
+/* Details */
 .skills-details {
   z-index: 1;
   width: 562px;
@@ -80,6 +83,7 @@
   text-align: center;
 }
 
+/* Call-to-Action */
 .contact-cta {
   display: flex;
   flex-direction: column;
@@ -109,6 +113,7 @@
   }
 }
 
+/* Additional skills */
 .additional-skills {
   display: flex;
   gap: 62px;

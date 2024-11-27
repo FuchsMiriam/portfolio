@@ -1,3 +1,4 @@
+/* Layout and structure for the contacts section */
 .contact-section {
   width: 100%;
   background: #141d2f;
@@ -35,6 +36,7 @@
   width: 500px;
 }
 
+/* Contact info and details */
 .contact-info {
   display: flex;
   justify-content: space-between;
@@ -71,6 +73,7 @@
   width: 80%;
 }
 
+/* Contact form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -146,6 +149,7 @@
   border: 1px solid red;
 }
 
+/* Privacy policy and confirmation */
 .privacy-policy-section {
   display: flex;
   align-items: center;
@@ -191,6 +195,7 @@
   margin-left: auto;
 }
 
+/* Decorative elements */
 .arrow-up {
   background: #141d2f;
   display: flex;

@@ -1,3 +1,4 @@
+/* Header layout */
 .header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +29,7 @@ a {
   color: white;
 }
 
+/* Language switcher */
 .language-switcher {
   display: flex;
   gap: 10px;
@@ -55,6 +57,7 @@ a {
   }
 }
 
+/* Burger menu and overlay */
 .burger-menu {
   display: none;
   cursor: pointer;
@@ -109,6 +112,7 @@ a {
   }
 }
 
+/* Navbar and links */
 .navbar {
   display: flex;
   align-items: center;
@@ -120,6 +124,7 @@ a {
   }
 }
 
+/* Name header */
 .name-header {
   display: flex;
   align-items: center;

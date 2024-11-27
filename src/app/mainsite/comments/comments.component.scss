@@ -1,3 +1,4 @@
+/* Layout and structure for the comments section */
 .comments-section {
   background: #141d2f;
   width: 100%;
@@ -12,6 +13,7 @@
   margin-top: 100px;
 }
 
+/* Individual comment styles */
 .comment-content {
   display: grid;
   gap: 44px;
@@ -71,6 +73,7 @@
   height: 3px;
 }
 
+/* Avatar and status indicator */
 .avatar-container {
   display: flex;
   align-items: center;
@@ -104,6 +107,7 @@
   background-color: #9747ff;
 }
 
+/* Navigation and controls */
 .comment-controls {
   margin-top: 24px;
   display: flex;
