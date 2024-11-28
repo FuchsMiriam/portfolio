@@ -28,12 +28,12 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;
   emailSent = false;
   formSent = false;
 
   post = {
-    endPoint: 'https://www.miriam-fuchs.net/sendMail.php',
+    endPoint: 'https://www.miriam-fuchs.net/assets/includes/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
