@@ -43,7 +43,7 @@
           class="form-input"
         />
         <span *ngIf="!name.valid && name.touched" class="form-error-message">
-          Your name is required and must be at least 4 characters.
+          {{ "CONTACT.NAME" | translate }}
         </span>
 
         <label for="email"></label>
@@ -63,7 +63,7 @@
           class="form-input"
         />
         <span *ngIf="!email.valid && email.touched" class="form-error-message">
-          Please enter a valid email address.
+          {{ "CONTACT.EMAIL" | translate }}
         </span>
 
         <label for="message"></label>
@@ -86,7 +86,7 @@
           *ngIf="!message.valid && message.touched && !message.disabled"
           class="form-error-message"
         >
-          Please enter a message. Message must be at least 8 characters.
+        {{ "CONTACT.MESSAGE" | translate }}
         </span>
 
         <div class="privacy-policy-section">

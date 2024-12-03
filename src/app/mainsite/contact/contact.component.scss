@@ -239,8 +239,19 @@
     max-width: 70%;
   }
 
+  .contact-details-header {
+    justify-content: center;
+  }
+
+  .contact-details-text {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .contact-form {
-    width: 50%;
+    width: 75%;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -290,6 +301,7 @@
 @media (max-width: 1024px) and (max-height: 600px) {
   .contact-form {
     margin-right: 0;
+    max-width: 75%;
   }
 }
 

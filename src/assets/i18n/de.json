@@ -31,8 +31,11 @@
     "NEED_DEV": "Brauchen Sie eine Frontend-Entwicklerin?<br/>",
     "CONTACT_ME": "<b>Kontaktieren Sie mich.</b>",
     "NAME_PLACEHOLDER": "Ihr Name",
+    "NAME": "Ihr Name ist erforderlich und muss mindestens 4 Zeichen lang sein.",
     "EMAIL_PLACEHOLDER": "Ihre E-Mail",
+    "EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
+    "MESSAGE": "Bitte geben Sie eine Nachricht ein (mind. 8 Zeichen).",
     "SUBMIT": "Nachricht absenden",
     "PRIVACY_POLICY": "Ich habe die <a style=\"color: #9747ff; text-decoration: none;\" href=\"privacy-policy\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Datenschutzerklärung</a> gelesen und stimme ihr zu."
   },

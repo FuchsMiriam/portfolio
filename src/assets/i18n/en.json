@@ -31,8 +31,11 @@
     "NEED_DEV": "Need a frontend developer?<br/>",
     "CONTACT_ME": "<b>Contact me.</b>",
     "NAME_PLACEHOLDER": "Your name",
+    "NAME": "Your name is required and must be at least 4 characters.",
     "EMAIL_PLACEHOLDER": "Your email",
+    "EMAIL": "Please enter a valid email address.",
     "MESSAGE_PLACEHOLDER": "Your message",
+    "MESSAGE": "Please enter a message. Message must be at least 8 characters.",
     "SUBMIT": "Submit message",
     "PRIVACY_POLICY": "I have read the <a style=\"color: #9747ff; text-decoration: none; cursor: pointer\" onmouseover=\"this.style.textDecoration='underline';\" onmouseout=\"this.style.textDecoration='none';\">Privacy Policy</a> and agree to it."
   },
