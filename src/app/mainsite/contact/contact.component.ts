@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -16,7 +17,8 @@ export class ContactComponent {
   constructor(
     private http: HttpClient,
     private sanitizer: DomSanitizer,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private router: Router
   ) {}
 
   privacyPolicyAccepted: boolean = false;
@@ -69,6 +71,7 @@ export class ContactComponent {
   private showConfirmation(ngForm?: NgForm) {
     if (ngForm) ngForm.resetForm();
     this.privacyPolicyAccepted = false;
+    this.checkboxImage = './assets/img/check_button.svg';
     this.emailSent = true;
     this.formSent = true;
 
@@ -89,6 +92,13 @@ export class ContactComponent {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
+    });
+  }
+
+  navigateToPrivacyPolicy(event: Event) {
+    event.preventDefault();
+     this.router.navigate(['/privacy-policy']).then(() => {
+      window.scrollTo(0, 0);
     });
   }
 

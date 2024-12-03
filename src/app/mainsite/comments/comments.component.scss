@@ -148,6 +148,10 @@
 }
 
 @media (max-width: 1250px) {
+  .comments-section {
+    margin-bottom: 100px;
+  }
+
   .comments {
     max-width: 80%;
     margin-top: 50px;
@@ -160,25 +164,18 @@
   .comment-text {
     > p {
       font-size: 16px;
+      text-align: center;
     }
   }
 }
 
 @media (max-width: 1280px) and (max-height: 800px) {
-  .comments-section {
-    width: 90%;
-  }
-
   .comments {
     width: 90%;
   }
 }
 
 @media (max-width: 900px) {
-  .comments-section {
-    max-width: 90%;
-  }
-
   .comment-content {
     height: fit-content;
   }

@@ -2,7 +2,7 @@
   <div class="contact-wrapper">
     <div class="contact-header">
       <div class="contact-header-line"></div>
-      <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
+      <h1>{{ "CONTACT.TITLE" | translate }}</h1>
     </div>
     <div class="contact-info">
       <div class="contact-details">
@@ -20,9 +20,8 @@
         </div>
       </div>
 
-      
       <form
-      *ngIf="!formSent"
+        *ngIf="!formSent"
         (ngSubmit)="onSubmit(contactForm)"
         #contactForm="ngForm"
         class="contact-form"
@@ -96,21 +95,32 @@
             [src]="checkboxImage"
             alt="Checkbox Icon"
           />
-          <span [innerHTML]="getHtml('CONTACT.PRIVACY_POLICY')" class="privacy-link"></span>
+          <!-- <span [innerHTML]="getHtml('CONTACT.PRIVACY_POLICY')" class="privacy-link"></span>-->
+          <span
+            [innerHTML]="getHtml('CONTACT.PRIVACY_POLICY')"
+            class="privacy-link"
+            (click)="navigateToPrivacyPolicy($event)"
+          ></span>
         </div>
 
         <button
           type="submit"
           class="submit-button"
+          id="submit-button"
           [disabled]="!contactForm.valid || !privacyPolicyAccepted"
           [ngClass]="{
-            'submit-button': checkboxImage === './assets/img/check_button_checked.svg'
+            'active': privacyPolicyAccepted,
+            'submit-button':
+              checkboxImage === './assets/img/check_button_checked.svg'
           }"
           [ngStyle]="{
-            'background-color': checkboxImage === './assets/img/check_button_checked.svg' ? '#70E61C' : '#B6B6B6'
+            'background-color':
+              checkboxImage === './assets/img/check_button_checked.svg'
+                ? '#70E61C'
+                : '#B6B6B6', 'cursor': !privacyPolicyAccepted ? 'not-allowed' : 'pointer'
           }"
         >
-        {{ 'CONTACT.SUBMIT' | translate }}
+          {{ "CONTACT.SUBMIT" | translate }}
         </button>
       </form>
 

@@ -1,18 +1,21 @@
 .footer-section {
   background: #141d2f;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 0 100px;
   box-sizing: border-box;
   justify-content: space-between;
+  position: relative;
+  top: 0;
+  background-color: #141d2f;
+  z-index: 999;
+  padding: 37px 10px;
 }
 
 .footer-content {
-  width: 100%;
-  display: flex;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .line {
@@ -26,8 +29,9 @@ footer {
   height: 291px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
 }
 
 .name-left,
@@ -119,6 +123,14 @@ footer {
     }
   }
 }
+
+@media (max-width: 975px) {
+  .footer-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 @media (max-width: 825px) {
   .footer {
     flex-direction: column;

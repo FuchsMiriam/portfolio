@@ -26,7 +26,7 @@
   flex-direction: row;
   gap: 62px;
   flex-wrap: wrap;
-  justify-content: center;
+  //justify-content: center;
 }
 
 .skill-item {
@@ -38,13 +38,11 @@
   text-align: center;
   height: 100px;
   width: 88px;
-  flex: 1 1 15%;
+  //flex: 1 1 15%;
 
-  > img {
-    &:hover {
-      position: relative;
-      top: -10px;
-    }
+  &:hover {
+    position: relative;
+    top: -10px;
   }
 }
 
@@ -52,10 +50,12 @@
 .skills-details {
   z-index: 1;
   width: 562px;
+  position: relative;
+  top: -80px;
 }
 
 .skills-details h2 {
-  font-size: 90px;
+  font-size: 88px;
   font-weight: 700;
 }
 
@@ -133,6 +133,10 @@
     flex-direction: column-reverse;
   }
 
+  .skills-details {
+    width: 70%;
+  }
+
   .skills-header {
     height: 200px;
   }
@@ -166,8 +170,12 @@
     text-align: left;
     font-size: 14px;
   }
+
   .skills-icons-grid {
-    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .skill-item {
@@ -181,11 +189,13 @@
 @media (max-width: 460px) {
   .skills-details {
     width: 250px;
+    top: 0;
   }
 
   .skill-item {
+    padding: 10px;
     > img {
-      height: 25px;
+      height: 50px;
       width: auto;
     }
     > p {

@@ -22,7 +22,4 @@ export class AboveTheFoldComponent {
       aboutMeElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  
-  
-
 }

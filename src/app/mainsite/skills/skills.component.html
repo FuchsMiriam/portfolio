@@ -2,7 +2,6 @@
   <div class="skills-wrapper">
     <div class="skills-icons-container">
       <div class="skills-icons-grid">
-        
         <div class="skill-item">
           <img src="./assets/img/html.svg" alt="" />
           <p>HTML</p>
@@ -43,44 +42,44 @@
           <p>GIT</p>
         </div>
 
-        <div class="additional-skills">
-          <div class="skill-item">
-            <img src="./assets/img/material-design.svg" alt="" />
-            <p>
-              Material <br />
-              Design
-            </p>
-          </div>
+        <div class="skill-item">
+          <img src="./assets/img/material-design.svg" alt="" />
+          <p>
+            Material <br />
+            Design
+          </p>
+        </div>
 
-          <div class="skill-item">
-            <img src="./assets/img/scrum.svg" alt="" />
-            <p>Scrum</p>
-          </div>
+        <div class="skill-item">
+          <img src="./assets/img/scrum.svg" alt="" />
+          <p>Scrum</p>
+        </div>
 
-          <div
-            (mouseenter)="hover = true"
-            (mouseleave)="hover = false"
-            class="skill-item"
-          >
-            <img class="learning-img" src="./assets/img/learning_downsized.png" alt="" />
-            <p>
-              Further <br />
-              Education
-            </p>
-          </div>
+        <div class="skill-item">
+          <img
+            class="learning-img"
+            src="./assets/img/learning_downsized.png"
+            alt=""
+          />
+          <p>
+            Further <br />
+            Education
+          </p>
         </div>
       </div>
     </div>
 
     <div class="skills-details">
       <div class="skills-header">
-        <h2>Skills</h2>
+        <h2 [innerHTML]="'ABOUT.HEADLINE' | translate"></h2>
         <div class="skills-bar"></div>
       </div>
       <p>{{ "ABOUT.SKILLS" | translate }}</p>
       <div class="contact-cta">
         <p>{{ "ABOUT.CONTACT_MESSAGE" | translate }}</p>
-        <a href="#contact" class="get-in-touch">{{ "BUTTON.GET_IN_TOUCH" | translate }}</a>
+        <a href="#contact" class="get-in-touch">{{
+          "BUTTON.GET_IN_TOUCH" | translate
+        }}</a>
       </div>
     </div>
   </div>

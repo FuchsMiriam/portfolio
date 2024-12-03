@@ -1,16 +1,22 @@
 <section class="impressum-container">
-    <h1>Impressum</h1>
-  
-    <p>Miriam Fuchs<br />
-      Beethovenstraße 47<br />
-      65232 Taunusstein
-    </p>
-  
-    <h2>Kontakt</h2>
-    <p>Telefon: +49 (0) 16095801131<br />
-      E-Mail: info&#64;miriam-fuchs.net
-    </p>
-  
-    <p>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank">https://www.e-recht24.de/impressum-generator.html</a></p>
-  </section>
-  
+  <h1>{{ "LEGAL_NOTICE.TITLE" | translate }}</h1>
+
+  <p>
+    {{ "LEGAL_NOTICE.NAME" | translate }}<br />
+    {{ "LEGAL_NOTICE.ADDRESS_LINE1" | translate }}<br />
+    {{ "LEGAL_NOTICE.ADDRESS_LINE2" | translate }}
+  </p>
+
+  <h2>{{ "LEGAL_NOTICE.CONTACT_TITLE" | translate }}</h2>
+  <p>
+    {{ "LEGAL_NOTICE.PHONE" | translate }}<br />
+    {{ "LEGAL_NOTICE.EMAIL" | translate }}
+  </p>
+
+  <p>
+    {{ "LEGAL_NOTICE.SOURCE" | translate }}:
+    <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank">
+      {{ "LEGAL_NOTICE.SOURCE_LINK" | translate }}
+    </a>
+  </p>
+</section>

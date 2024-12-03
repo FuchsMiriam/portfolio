@@ -16,6 +16,7 @@
     "DESCRIPTION": "Hallo, ich bin eine Frontend-Entwicklerin aus Taunusstein, Deutschland, mit einer Leidenschaft für die Erstellung intuitiver und responsiver Webanwendungen.",
     "INFO": "Meine Reise in die Frontend-Entwicklung begann aus einer Faszination darüber, wie Websites hinter den Kulissen funktionieren. Ich habe mich schnell in die Kombination aus Kreativität und Logik verliebt, die beim Aufbau von Benutzeroberflächen eine Rolle spielt. Jedes Projekt ist eine Gelegenheit, meine Fähigkeiten weiterzuentwickeln und nahtlose, ansprechende Erlebnisse für Benutzer zu schaffen. Ich liebe es, am Puls der neuesten Frontend-Technologien zu bleiben, um frische Ideen in meine Arbeit einzubringen. Ich habe eine flexible Denkweise und freue mich immer darauf, neue Herausforderungen anzunehmen, die mir helfen, meine Fähigkeiten zu erweitern und mein Verständnis zu vertiefen.",
     "SPECIALIZATION": "Ich bin auf verschiedene Frontend-Technologien spezialisiert und liebe es, Designs mit sauberem, effizientem Code zum Leben zu erwecken. Ich habe Spaß daran, komplexe Probleme zu lösen und ständig neue Technologien zu lernen, um das Benutzererlebnis zu verbessern.",
+    "HEADLINE": "<span>Fähigkeiten</span>",
     "SKILLS": "Ich habe wertvolle Erfahrungen im Aufbau von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt. Von der Gestaltung responsiver Benutzeroberflächen bis zur Leistungsoptimierung arbeite ich kontinuierlich an meinen Fähigkeiten, um an der Spitze der Branche zu bleiben. Meine Reise endet hier nicht — ich bin stets auf der Suche nach neuen Wegen, mein Wissen zu erweitern und neue Herausforderungen anzunehmen. Kürzlich habe ich begonnen, mich mit ethischem Hacken zu beschäftigen, um die Websicherheit besser zu verstehen und die Robustheit der von mir entwickelten Anwendungen zu erhöhen. Kontinuierliches Lernen ist der Schlüssel zu meiner Herangehensweise, und ich bin gespannt, wohin es mich als Nächstes führt.",
     "CONTACT_MESSAGE": "Kontaktieren Sie mich gerne. Ich bin stets bestrebt, mein Wissen zu erweitern und freue mich darauf, neue Technologien und Konzepte zu lernen."
   },
@@ -41,5 +42,16 @@
     "POLLO": "Ein Jump ’n’ Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die Hühner zu kämpfen.",
     "CRM": "Ein sehr simples Customer-Relationship-Management-System mit CRUD-Funktionalität.",
     "POKEMON": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und auflistet."
-  }  
+  },
+  "LEGAL_NOTICE": {
+    "TITLE": "Impressum",
+    "NAME": "Miriam Fuchs",
+    "ADDRESS_LINE1": "Beethovenstraße 47",
+    "ADDRESS_LINE2": "65232 Taunusstein",
+    "CONTACT_TITLE": "Kontakt",
+    "PHONE": "Telefon: +49 (0) 16095801131",
+    "EMAIL": "E-Mail: info@miriam-fuchs.net",
+    "SOURCE": "Quelle",
+    "SOURCE_LINK": "https://www.e-recht24.de/impressum-generator.html"
+  }
 }
