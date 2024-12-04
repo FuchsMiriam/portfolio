@@ -94,8 +94,9 @@
             (click)="acceptPrivacyPolicy()"
             [src]="checkboxImage"
             alt="Checkbox Icon"
+            [ngClass]="{'disabled-checkbox': !isFormValid()}"
+            [style.cursor]="isFormValid() ? 'pointer' : 'not-allowed'" 
           />
-          <!-- <span [innerHTML]="getHtml('CONTACT.PRIVACY_POLICY')" class="privacy-link"></span>-->
           <span
             [innerHTML]="getHtml('CONTACT.PRIVACY_POLICY')"
             class="privacy-link"

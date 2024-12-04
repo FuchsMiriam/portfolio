@@ -82,10 +82,20 @@ export class ContactComponent {
   }
 
   acceptPrivacyPolicy() {
-    this.privacyPolicyAccepted = !this.privacyPolicyAccepted;
-    this.checkboxImage = this.privacyPolicyAccepted
-      ? './assets/img/check_button_checked.svg'
-      : './assets/img/check_button.svg';
+    if (this.isFormValid()) {
+      this.privacyPolicyAccepted = !this.privacyPolicyAccepted;
+      this.checkboxImage = this.privacyPolicyAccepted
+        ? './assets/img/check_button_checked.svg'
+        : './assets/img/check_button.svg';
+    }
+  }
+
+  isFormValid(): boolean {
+    return (
+      this.contactData.name.trim() !== '' &&
+      this.contactData.email.trim() !== '' &&
+      this.contactData.message.trim() !== ''
+    );
   }
 
   toTop() {
@@ -97,7 +107,7 @@ export class ContactComponent {
 
   navigateToPrivacyPolicy(event: Event) {
     event.preventDefault();
-     this.router.navigate(['/privacy-policy']).then(() => {
+    this.router.navigate(['/privacy-policy']).then(() => {
       window.scrollTo(0, 0);
     });
   }

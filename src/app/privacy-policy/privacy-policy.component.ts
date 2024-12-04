@@ -17,18 +17,22 @@ export class PrivacyPolicyComponent implements OnInit {
   constructor(private translate: TranslateService, private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-    this.translate.get('PRIVACY_POLICY.TITLE').subscribe(() => {
-      this.isLoaded = true;
-    });
-    this.route.fragment.subscribe(fragment => {
-      if (fragment) {
-        this.scrollToSection(fragment);
-      }
-    });
+ngOnInit(): void {
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+  this.translate.use(savedLanguage);
+
+  this.translate.get('PRIVACY_POLICY.TITLE').subscribe(() => {
+    this.isLoaded = true;
+  });
+
+
+  this.route.fragment.subscribe((fragment) => {
+    if (fragment) {
+      this.scrollToSection(fragment);
+    }
+  });
 }
+
 private scrollToSection(fragment: string): void {
   const element = document.getElementById(fragment);
   if (element) {

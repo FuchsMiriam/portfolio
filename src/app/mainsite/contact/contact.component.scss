@@ -160,6 +160,7 @@
   font-size: 14px;
   color: #fff;
   align-self: flex-start;
+  z-index: 10;
 
   > img {
     display: block;
@@ -186,6 +187,19 @@
 .privacy-link a:hover {
   text-decoration: underline !important;
   cursor: pointer !important;
+}
+
+.disabled-checkbox {
+  opacity: 0.5;
+}
+
+.privacy-policy-section img {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.privacy-policy-section img.disabled-checkbox {
+  cursor: not-allowed;
 }
 
 #confirmation-message {
@@ -220,7 +234,7 @@
 .contact-shadow {
   position: absolute;
   left: 0px;
-  top: 650px;
+  top: 700px;
   z-index: 0;
 }
 
@@ -352,7 +366,7 @@
   }
 
   .contact-shadow {
-    top: 1050px;
+    top: 1200px;
   }
 }
 
