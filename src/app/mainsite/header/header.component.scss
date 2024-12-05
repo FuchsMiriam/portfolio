@@ -68,7 +68,7 @@ a {
   top: 0;
   position: fixed;
   left: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -94,13 +94,13 @@ a {
 }
 
 .overlay-content a:hover {
-  font-size: 40px;
+  transform: scale(1.2);
 }
 
 .close-overlay {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 50px;
+  right: 35px;
   width: 30px;
   height: 30px;
   cursor: pointer;

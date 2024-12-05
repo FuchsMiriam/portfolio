@@ -13,7 +13,7 @@
 .hero-content-wrapper {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  //margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,9 +25,11 @@
   position: absolute;
   top: 40px;
   z-index: 1;
-  width: 1440px;
-  height: 1080px;
+  width: 100vw;
+  height: 1100px;
   object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .image-wrapper {

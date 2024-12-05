@@ -61,7 +61,6 @@ export class ContactComponent {
           error: (error) => {
             console.error('Error occurred while sending email:', error);
           },
-          complete: () => console.info('Send post completed'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       this.showConfirmation(ngForm);
@@ -70,6 +69,11 @@ export class ContactComponent {
 
   private showConfirmation(ngForm?: NgForm) {
     if (ngForm) ngForm.resetForm();
+
+    this.contactData.name = '';
+    this.contactData.email = '';
+    this.contactData.message = '';
+
     this.privacyPolicyAccepted = false;
     this.checkboxImage = './assets/img/check_button.svg';
     this.emailSent = true;
