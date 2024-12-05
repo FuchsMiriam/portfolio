@@ -194,6 +194,19 @@ a {
     display: flex;
     width: 24px;
     height: auto;
+    position: relative;
+    animation-name: burger-move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes burger-move {
+    from {
+      top: -50px;
+    }
+    to {
+      top: 0px;
+    }
   }
 }
 

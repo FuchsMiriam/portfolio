@@ -13,7 +13,6 @@
 .hero-content-wrapper {
   max-width: 1440px;
   width: 100%;
-  //margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,6 +99,15 @@
 }
 
 /* Buttons and interactive elements */
+.contact-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 110px;
+  text-align: center;
+}
+
 .contact-button {
   background-color: #70e61c;
   color: white;
@@ -118,16 +126,20 @@
   &:hover {
     background-color: #9747ff;
     transform: scale(1.1);
+    animation: pulse 1s infinite;
   }
-}
 
-.contact-button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 110px;
-  text-align: center;
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 .hero-content {
@@ -190,6 +202,38 @@
   width: 208px;
   position: relative;
   left: 80px;
+  animation-direction: alternate;
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  > p {
+    color: white;
+    background: linear-gradient(90deg, white, #b0b0b0, #4e5d6b, white);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-move 2s infinite ease-in-out;
+  }
+
+  @keyframes gradient-move {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 .scroll-arrow {
