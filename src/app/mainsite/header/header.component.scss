@@ -16,6 +16,7 @@ header {
   max-width: 1440px;
   margin: 0 auto;
   padding: 37px 10px;
+  padding-top: 10px;
 }
 
 .menu {
@@ -156,8 +157,7 @@ a {
 @media (max-width: 1280px) and (max-height: 800px) {
   header {
     justify-content: space-between;
-    gap: 100px;
-    padding: 0;
+    //gap: 100px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -166,7 +166,7 @@ a {
 @media (max-width: 1024px) and (max-height: 600px) {
   header {
     justify-content: space-between;
-    gap: 50px;
+    //gap: 50px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -191,7 +191,7 @@ a {
   }
 
   .burger-menu {
-    display: flex;
+    display: flex !important;
     width: 24px;
     height: auto;
     position: relative;
@@ -231,9 +231,6 @@ a {
 }
 
 @media (max-width: 540px) and (max-height: 720px) {
-  header {
-    gap: 180px;
-  }
   .header {
     padding-right: 0;
   }
@@ -310,6 +307,10 @@ a {
 
   .close-overlay {
     right: 22px;
-    top: 7px;
+    top: 16px;
+  }
+
+  .burger-menu {
+    display: flex;
   }
 }

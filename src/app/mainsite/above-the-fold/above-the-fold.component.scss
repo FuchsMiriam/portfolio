@@ -22,10 +22,11 @@
 
 .hero-bg {
   position: absolute;
-  top: 40px;
+  //top: 200px;
+  top: 20%;
   z-index: 1;
   width: 100vw;
-  height: 1100px;
+  height: 120%;
   object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
@@ -249,27 +250,63 @@
   transform: rotate(90deg) scale(1.2);
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2550px) {
   .hero-bg {
-    height: 1150px;
+    top: 252px;
   }
 }
 
-@media (min-width: 2080px) {
+@media (min-width: 2920px) {
   .hero-bg {
-    height: 1200px;
+    top: 270px;
   }
 }
 
-@media (min-width: 2450px) {
+@media (min-width: 3100px) {
   .hero-bg {
-    height: 1250px;
+    top: 280px;
   }
 }
 
-@media (min-width: 2700px) {
+@media (min-width: 3200px) {
   .hero-bg {
-    height: 1300px;
+    top: 290px;
+  }
+}
+
+@media (min-width: 3300px) {
+  .hero-bg {
+    top: 300px;
+  }
+}
+
+@media (min-width: 3400px) {
+  .hero-bg {
+    top: 310px;
+  }
+}
+
+@media (min-width: 3500px) {
+  .hero-bg {
+    top: 320px;
+  }
+}
+
+@media (min-width: 3600px) {
+  .hero-bg {
+    top: 330px;
+  }
+}
+
+@media (min-width: 3700px) {
+  .hero-bg {
+    top: 340px;
+  }
+}
+
+@media (min-width: 3800px) {
+  .hero-bg {
+    top: 350px;
   }
 }
 
@@ -282,7 +319,8 @@
   }
 
   .hero-bg {
-    top: 90px;
+    //top: 140px;
+    top: 13%;
   }
 
   .hero-section {
@@ -321,10 +359,16 @@
 }
 
 @media (max-width: 1024px) and (max-height: 600px) {
+  .hero-bg {
+    //top: 200px;
+    top: 26%;
+  }
+
   .hero-section {
     padding-top: 200px;
     margin-bottom: 150px;
   }
+
   .name-title {
     > h1 {
       font-size: 80px;
@@ -335,6 +379,10 @@
 @media (max-width: 980px) {
   .hero-section {
     padding-top: 0;
+  }
+
+  .hero-bg {
+    top: 16%;
   }
 
   .name-title {
@@ -373,6 +421,11 @@
 }
 
 @media (max-width: 540px) and (max-height: 720px) {
+  .hero-bg {
+    //top: 210px;
+    top: 26%;
+  }
+
   .hero-section {
     padding-top: 100px;
   }
@@ -391,11 +444,17 @@
   }
 
   .hero-bg {
-    top: -150px;
+    //top: 30px;
+    top: 3%;
   }
 }
 
 @media (max-width: 415px) {
+  .hero-bg {
+    //top: -8px;
+    top: -1%;
+  }
+
   .introduction-container {
     flex-direction: column;
   }
@@ -418,5 +477,25 @@
 
   .social-bar {
     gap: 15px;
+  }
+}
+
+@media (max-width: 390px) and (max-height: 844px) {
+  .hero-bg {
+    //top: -15px;
+    top: -2%;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 740px) {
+  .hero-bg {
+    top: 2% !important;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .hero-bg {
+    //top: 70px;
+    top: 8%;
   }
 }

@@ -158,6 +158,14 @@ p {
 }
 
 @media (max-width: 375px) and (max-height: 667px) {
+  .about-me {
+    margin-bottom: 0;
+  }
+
+  .about-me-content {
+    margin-bottom: 0;
+  }
+
   .about-me-content {
     align-items: center;
   }
