@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .about-me-content {
@@ -109,7 +109,6 @@ p {
 
   .about-me-content {
     max-width: 70%;
-    margin-bottom: 100px;
   }
 }
 
@@ -131,6 +130,7 @@ p {
   .about-me {
     justify-content: flex-start;
     padding: 0 20px;
+    margin-bottom: 0;
   }
 
   .about-me-container {
@@ -139,11 +139,11 @@ p {
 
   .about-me-content {
     align-items: flex-start;
-    margin-top: 100px;
     max-width: 100%;
     align-items: center;
     > h1 {
       font-size: 40px;
+      margin-top: 0;
     }
     > p {
       font-size: 14px;
@@ -154,6 +154,12 @@ p {
     > p {
       font-size: 14px;
     }
+  }
+}
+
+@media (max-width: 470px) {
+  .about-me-content {
+    margin-top: 0;
   }
 }
 

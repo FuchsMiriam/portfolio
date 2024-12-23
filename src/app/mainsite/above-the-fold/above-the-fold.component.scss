@@ -22,11 +22,10 @@
 
 .hero-bg {
   position: absolute;
-  //top: 200px;
-  top: 20%;
+  top: 2%;
   z-index: 1;
   width: 100vw;
-  height: 120%;
+  height: 170%;
   object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
@@ -250,63 +249,45 @@
   transform: rotate(90deg) scale(1.2);
 }
 
-@media (min-width: 2550px) {
+@media (min-height: 1080px) {
   .hero-bg {
-    top: 252px;
+    top: 1%;
   }
 }
 
-@media (min-width: 2920px) {
+@media (min-width: 1920px) {
   .hero-bg {
-    top: 270px;
+    top: -42%;
+    height: 300%;
   }
 }
 
-@media (min-width: 3100px) {
+@media (min-width: 2220px) {
   .hero-bg {
-    top: 280px;
+    top: -54%;
+    height: 300%;
+    object-position: left bottom;
   }
 }
 
-@media (min-width: 3200px) {
+@media (min-width: 2730px) {
   .hero-bg {
-    top: 290px;
+    top: -45%;
+    height: 290%;
   }
 }
 
-@media (min-width: 3300px) {
+@media (min-width: 2730px) and (min-height: 1080px) {
   .hero-bg {
-    top: 300px;
+    top: -50%;
   }
 }
 
-@media (min-width: 3400px) {
+@media (min-width: 3840px) and (min-height: 2160px) {
   .hero-bg {
-    top: 310px;
-  }
-}
-
-@media (min-width: 3500px) {
-  .hero-bg {
-    top: 320px;
-  }
-}
-
-@media (min-width: 3600px) {
-  .hero-bg {
-    top: 330px;
-  }
-}
-
-@media (min-width: 3700px) {
-  .hero-bg {
-    top: 340px;
-  }
-}
-
-@media (min-width: 3800px) {
-  .hero-bg {
-    top: 350px;
+    top: -21%;
+    height: 200%;
+    object-position: top left;
   }
 }
 
@@ -319,8 +300,8 @@
   }
 
   .hero-bg {
-    //top: 140px;
     top: 13%;
+    height: 120%;
   }
 
   .hero-section {
@@ -360,7 +341,6 @@
 
 @media (max-width: 1024px) and (max-height: 600px) {
   .hero-bg {
-    //top: 200px;
     top: 26%;
   }
 
@@ -407,6 +387,12 @@
       line-height: 38.4px;
       text-align: left;
     }
+  }
+}
+
+@media (max-width: 912px) and (max-height: 1368px) {
+  .hero-bg {
+    top: 15%;
   }
 }
 
@@ -494,8 +480,20 @@
 }
 
 @media (max-width: 375px) and (max-height: 667px) {
+  .hero-section {
+    padding-top: 0;
+  }
+
   .hero-bg {
     //top: 70px;
-    top: 8%;
+    top: 5%;
+  }
+
+  .contact-button {
+    margin-top: 10px;
+  }
+
+  .name-title {
+    margin-bottom: 0;
   }
 }
