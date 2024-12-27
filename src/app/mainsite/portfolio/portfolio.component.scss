@@ -236,10 +236,6 @@
     margin-left: auto;
   }
 
-  /*.project-info {
-    width: 40%;
-  }*/
-
   .project-description {
     width: 90%;
   }
@@ -261,6 +257,10 @@
     background-position: bottom left, center left;
     z-index: 0;
     background-size: 350px, 400px;
+  }
+
+  .portfolio-content {
+    margin-top: 0;
   }
 
   .portfolio-header {
@@ -306,12 +306,12 @@
 }
 
 @media (max-width: 375px) and (max-height: 667px) {
-  .portfolio{
+  .portfolio {
     background-position: bottom left, center right;
     background-size: 300px, 250px;
   }
 
-  .project-info{
+  .project-info {
     width: 90%;
   }
 
@@ -319,7 +319,7 @@
     align-items: center;
     text-align: center;
   }
-  
+
   .project-card:nth-child(even) .project-info {
     align-items: center;
     text-align: center;
