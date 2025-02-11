@@ -181,10 +181,17 @@ a {
 }
 
 @media (max-width: 975px) {
-  .header {
+  header {
+    padding-bottom: 0;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 5px;
   }
+
+  /*.header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }*/
 
   .navbar {
     display: none;
@@ -307,8 +314,8 @@ a {
   }
 }
 
-@media (max-width: 344px) and (max-height: 882px){
-  .close-overlay{
+@media (max-width: 344px) and (max-height: 882px) {
+  .close-overlay {
     top: 37px;
   }
 }
