@@ -44,7 +44,9 @@
     "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "POLLO": "A Jump ’n’ Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chickens.",
     "CRM": "A very simple Customer Relationship Management system working with CRUD functionality.",
-    "POKEMON": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+    "POKEMON": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information.",
+    "TYPO3-TITLE": "Website",
+    "TYPO3": "A website built and maintained using TYPO3."
   },
   "LEGAL_NOTICE": {
     "TITLE": "Legal Notice",
