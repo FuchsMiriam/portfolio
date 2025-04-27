@@ -14,4 +14,8 @@ export class FooterComponent {
   navigateToImprint() {
     this.router.navigate(['/imprint']);
   }
+
+  navigateToPp() {
+    this.router.navigate(['/privacy-policy']);
+  }
 }

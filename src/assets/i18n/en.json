@@ -44,14 +44,14 @@
     "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "POLLO": "A Jump ’n’ Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chickens.",
     "POKEMON": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information.",
-    "CRM": "Work in progress: A very simple Customer Relationship Management system working with CRUD functionality.",
+    "CRM": "WORK IN PROGRESS: A very simple Customer Relationship Management system working with CRUD functionality.",
     "TYPO3-TITLE": "Website",
     "TYPO3": "A website built and maintained using TYPO3.",
     "VOCABULARY-TITLE": "Vocabulary trainer",
     "VOCABULARY": "A vocabulary trainer developed in C++. Users can add new words and test their knowledge through a vocabulary quiz."
   },
   "LEGAL_NOTICE": {
-    "TITLE": "Legal Notice",
+    "TITLE": "Legal notice",
     "NAME": "Miriam Fuchs",
     "ADDRESS_LINE1": "Beethovenstraße 47",
     "ADDRESS_LINE2": "65232 Taunusstein",

@@ -102,6 +102,8 @@ footer {
 
 .underline {
   height: 40px;
+  display: flex;
+  gap: 8px;
 
   a {
     text-decoration: none;
